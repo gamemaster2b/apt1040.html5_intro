@@ -1,6 +1,6 @@
 #set document(
   title: "Campus Events Micro-Site - APT1040 Week 07",
-  author: "Your Name Here",
+  author: "Bill Lisi Musyimi",
   date: datetime.today(),
 )
 
@@ -12,7 +12,7 @@
 
 #set text(
   font: "Liberation Sans",
-  size: 11pt,
+  size: 14pt,
 )
 
 #set heading(numbering: "1.1")
@@ -33,8 +33,8 @@
 
   #v(2cm)
   #text(size: 14pt)[
-    *Student Name:* [Your Full Name Here]\
-    *Student ID:* [Your Student ID Here]\
+    *Student Name:* Bill Lisi Musyimi\
+    *Student ID:* 675875\
     *Course:* APT1040-VA\
     *Date:* #datetime.today().display()
   ]
@@ -47,26 +47,9 @@
 
 #pagebreak()
 
-// Table of Contents
-#outline(
-  title: "Table of Contents",
-  indent: auto,
-)
-
-#pagebreak()
-
-// Executive Summary
-= Executive Summary
+= Summary
 
 This submission presents a complete Campus Events Micro-Site that demonstrates proficiency in semantic HTML5, CSS design systems, web accessibility, and responsive design. The project achieves full marks (30/30) across all marking criteria while exceeding accessibility standards.
-
-*Key Achievements:*
-- ✓ Valid HTML5 and CSS3 code
-- ✓ WCAG 2.1 Level AA compliance (AAA for target size)
-- ✓ Semantic structure with proper element hierarchy
-- ✓ CSS design token system for maintainability
-- ✓ Optimized images with proper formats and accessibility
-- ✓ Comprehensive documentation and testing
 
 #pagebreak()
 
@@ -75,7 +58,7 @@ This submission presents a complete Campus Events Micro-Site that demonstrates p
 
 This micro-site employs semantic HTML5 elements to create a clear document structure and enhance accessibility. The `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, and `<footer>` elements establish meaningful content hierarchy, while `<figure>` and `<figcaption>` provide context for images. Each event uses `<article>` with descriptive metadata in `<dl>` elements for semantic richness.
 
-The color system uses CSS custom properties for consistency and maintainability. Primary blue (#2E5CB8) conveys professionalism and trust, while accent gold (#FFB81C) drives attention to CTAs. Muted text (#666666) reduces visual noise for secondary information. The typography scale follows modular proportions with carefully chosen line-heights: 1.6 for body text ensures comfortable long-form reading, while 1.2 for headings prevents excessive spacing in larger text.
+The color system uses CSS custom properties for consistency and maintainability. Primary blue (\#2E5CB8) conveys professionalism and trust, while accent gold (\#FFB81C) drives attention to CTAs. Muted text (\#666666) reduces visual noise for secondary information. The typography scale follows modular proportions with carefully chosen line-heights: 1.6 for body text ensures comfortable long-form reading, while 1.2 for headings prevents excessive spacing in larger text.
 
 Image format choices balance quality and performance: JPEG for photographs (tech-summit.jpg, cultural-fest.jpg) provides optimal compression, while SVG for the logo ensures crisp rendering at any scale. The decorative background uses an empty `alt=""` attribute, whereas content images receive descriptive alt text describing relevant visual information.
 
@@ -87,17 +70,7 @@ Image format choices balance quality and performance: JPEG for photographs (tech
 == Screenshot 1: Full Page View
 
 #figure(
-  rect(width: 100%, height: 15cm, stroke: 2pt + gray)[
-    #align(center + horizon)[
-      #text(size: 14pt, fill: gray)[
-        *[PLACEHOLDER - Full Page Screenshot]*\
-        \
-        Insert full-page screenshot of index.html here\
-        showing complete layout with header, navigation,\
-        three event cards, and footer.
-      ]
-    ]
-  ],
+  image("Full Page View.png",width: 100%),
   caption: "Complete page view showing semantic HTML structure and responsive layout"
 )
 
@@ -106,106 +79,30 @@ Image format choices balance quality and performance: JPEG for photographs (tech
 == Screenshot 2: Network Tab (All Resources Load)
 
 #figure(
-  rect(width: 100%, height: 12cm, stroke: 2pt + gray)[
-    #align(center + horizon)[
-      #text(size: 14pt, fill: gray)[
-        *[PLACEHOLDER - Network Tab Screenshot]*\
-        \
-        Insert DevTools Network tab screenshot here\
-        showing all resources (HTML, CSS, SVG logo,\
-        3 JPEG images) loading with 200 OK status.\
-        No 404 errors should be visible.
-      ]
-    ]
-  ],
+  image("Network Tab (All Resources Load).png", width: 100%),
   caption: "DevTools Network tab proving all files load successfully"
 )
 
 #pagebreak()
 
-== Screenshot 3: Accessibility Tree with Alt Text
+== Screenshot 3: Skip Link Focused State
 
 #figure(
-  rect(width: 100%, height: 12cm, stroke: 2pt + gray)[
-    #align(center + horizon)[
-      #text(size: 14pt, fill: gray)[
-        *[PLACEHOLDER - Accessibility Tree]*\
-        \
-        Insert DevTools Accessibility tab screenshot\
-        showing image nodes expanded with visible\
-        alt text for content images and empty alt\
-        for decorative image (career-fair-bg.jpg).
-      ]
-    ]
-  ],
-  caption: "Accessibility tree showing proper alt text implementation"
-)
-
-#pagebreak()
-
-== Screenshot 4: Skip Link Focused State
-
-#figure(
-  rect(width: 100%, height: 12cm, stroke: 2pt + gray)[
-    #align(center + horizon)[
-      #text(size: 14pt, fill: gray)[
-        *[PLACEHOLDER - Skip Link Screenshot]*\
-        \
-        Insert screenshot of skip link in focused state\
-        (after pressing Tab 4 times).\
-        Should show large yellow button with black border\
-        positioned in top-left area (16px from edges).\
-        Text: "Skip to main content"
-      ]
-    ]
-  ],
+  image("Skip Link Focused State.png", width: 100%),
   caption: "Skip link in focused state - large, visible, and accessible (WCAG AAA)"
 )
 
 #pagebreak()
 
-== Screenshot 5: HTML Validation Results
+== Screenshot 4: HTML Validation Results
 
 #figure(
-  rect(width: 100%, height: 12cm, stroke: 2pt + gray)[
-    #align(center + horizon)[
-      #text(size: 14pt, fill: gray)[
-        *[PLACEHOLDER - HTML Validation]*\
-        \
-        Insert screenshot of HTML validation results\
-        from W3C Validator or HTML Tidy output\
-        showing "No errors" or "Document is valid".\
-        Command used: tidy -q index.html
-      ]
-    ]
-  ],
+  image("HTML Validation Results.png", width: 100%),
   caption: "HTML5 validation results - valid with no errors"
 )
 
 #pagebreak()
 
-== Screenshot 6: Mobile Responsive View
-
-#figure(
-  rect(width: 100%, height: 12cm, stroke: 2pt + gray)[
-    #align(center + horizon)[
-      #text(size: 14pt, fill: gray)[
-        *[PLACEHOLDER - Mobile View]*\
-        \
-        Insert screenshot from DevTools device mode\
-        showing mobile layout (iPhone or similar).\
-        Should display responsive navigation,\
-        stacked event cards, and touch-friendly\
-        skip link when tabbed.
-      ]
-    ]
-  ],
-  caption: "Mobile responsive design - optimized for all device sizes"
-)
-
-#pagebreak()
-
-// Code Samples
 = Code Samples
 
 == Semantic HTML Structure
@@ -242,7 +139,7 @@ The following demonstrates proper semantic HTML5 with article markup:
             Explore the latest trends in artificial intelligence...
         </p>
 
-        <a href="#tech-summit-details" class="btn btn-primary">Learn more</a>
+        <a href="\#tech-summit-details" class="btn btn-primary">Learn more</a>
     </div>
 </article>
 ```
@@ -254,11 +151,11 @@ The following demonstrates proper semantic HTML5 with article markup:
 ```css
 :root {
     /* Color Tokens */
-    --color-primary: #2E5CB8;        /* Deep blue for primary elements */
-    --color-accent: #FFB81C;          /* Gold/yellow for emphasis and CTAs */
-    --color-text-base: #1a1a1a;       /* Near-black for body text */
-    --color-text-muted: #666666;      /* Gray for secondary text */
-    --color-background: #FFFFFF;      /* Clean white background */
+    --color-primary: \#2E5CB8;        /* Deep blue for primary elements */
+    --color-accent: \#FFB81C;          /* Gold/yellow for emphasis and CTAs */
+    --color-text-base: \#1a1a1a;       /* Near-black for body text */
+    --color-text-muted: \#666666;      /* Gray for secondary text */
+    --color-background: \#FFFFFF;      /* Clean white background */
 
     /* Typography Scale */
     --font-size-base: 1rem;           /* 16px - body text */
@@ -290,8 +187,8 @@ The following demonstrates proper semantic HTML5 with article markup:
     position: absolute;
     top: -100px;                      /* Hidden off-screen */
     left: 0;
-    background: var(--color-accent);  /* Yellow #FFB81C */
-    color: var(--color-text-base);    /* Black #1a1a1a */
+    background: var(--color-accent);  /* Yellow \#FFB81C */
+    color: var(--color-text-base);    /* Black \#1a1a1a */
     padding: var(--spacing-md) var(--spacing-lg);  /* 24px 32px */
     text-decoration: none;
     font-weight: 700;
@@ -347,384 +244,6 @@ The following demonstrates proper semantic HTML5 with article markup:
 
 #pagebreak()
 
-// Marking Criteria Compliance
-= Marking Criteria Compliance
-
-== B1: Semantic Structure and Content [8/8 marks]
-
-=== Semantic Containers & Heading Hierarchy (4 marks) ✓
-
-*Evidence in `index.html`:*
-- `<header>` (lines 14-33): Contains site branding and logo
-- `<nav>` (lines 35-45): Navigation with aria-label="Main navigation"
-- `<main id="main-content">` (line 50): Main content area, target for skip link
-- `<footer>` (lines 211-242): Contact info and quick links
-- `<aside id="about">` (lines 198-209): "About this site" section
-
-*Heading Hierarchy:*
-- h1: "Upcoming Campus Events" (line 51)
-- h2: "Featured Events" (line 56, visually hidden)
-- h2: "About This Site" (line 200)
-- h3: Event titles (lines 73, 122, 172)
-
-No heading levels skipped. Proper semantic structure maintained.
-
-=== Article Markup with Metadata (3 marks) ✓
-
-Each of three events (Tech Summit, Cultural Festival, Career Fair) contains:
-- `<article class="event-card">` wrapper
-- `<h3>` title element
-- `<dl>` definition list for metadata (date, time, location)
-- `<time datetime="YYYY-MM-DD">` with human-readable date
-- Descriptive paragraph (150+ words)
-- "Learn more" CTA link
-
-*Example from lines 58-108:*
-- Article wrapper with semantic class
-- Figure with image and caption
-- Complete event metadata in definition list
-- Structured, accessible content
-
-=== Working Skip Link (1 mark) ✓
-
-*Location:* Line 47-48 in `index.html`
-
-```html
-<a href="#main-content" class="skip-link">Skip to main content</a>
-```
-
-*Functionality:*
-- Positioned after `<nav>` (accessible via keyboard)
-- Links to `#main-content` (line 50)
-- Hidden off-screen (CSS: top: -100px)
-- Becomes visible on `:focus` (CSS: top: 16px, left: 16px)
-- Large size: 66px height (exceeds WCAG AAA 44px minimum)
-
-*Testing:* Press Tab 4 times → Skip link appears → Press Enter → Jumps to main content
-
-#pagebreak()
-
-== B2: Typography and Color System in CSS [8/8 marks]
-
-=== Variables Declared and Used (3 marks) ✓
-
-*Location:* `styles.css` lines 11-52
-
-*Color Variables:*
-- `--color-primary: #2E5CB8` (deep blue)
-- `--color-accent: #FFB81C` (gold/yellow)
-- `--color-text-base: #1a1a1a` (near-black)
-- `--color-text-muted: #666666` (gray)
-- `--color-background: #FFFFFF` (white)
-
-*Typography Variables:*
-- Font sizes: base (1rem), h1 (2.5rem), h2 (2rem), h3 (1.5rem)
-- Line heights: base (1.6), heading (1.2), relaxed (1.8)
-- Font families: system font stack for body, Georgia for headings
-
-*Spacing Variables:*
-- xs (0.5rem), sm (1rem), md (1.5rem), lg (2rem), xl (3rem), 2xl (4rem)
-
-All variables used consistently with `var()` function throughout stylesheet (400+ uses).
-
-=== Type Scale with Justified Line-Heights (3 marks) ✓
-
-*Body Text:* 1rem (16px) with 1.6 line-height
-- *Justification:* 1.6 line-height provides optimal spacing for long-form reading. Research shows 1.5-1.7 is ideal for paragraph comprehension and eye tracking.
-
-*H1:* 2.5rem (40px) with 1.2 line-height
-- *Justification:* Larger text needs tighter line-height. 1.2 prevents excessive vertical gaps while maintaining readability for short heading text.
-
-*H2:* 2rem (32px) with 1.2 line-height
-- *Justification:* Consistent with h1 approach. Section headings benefit from compact spacing to maintain visual hierarchy.
-
-*H3:* 1.5rem (24px) with 1.3 line-height
-- *Justification:* Slightly more relaxed than h1/h2 as h3 headings are closer to body text size. 1.3 provides balance between compactness and readability.
-
-All rationale documented in CSS comments (lines 35-39, 82-118).
-
-=== Utility Classes Effective (2 marks) ✓
-
-*Single-class selectors (lines 150-180):*
-- `.mt-sm`, `.mb-md`, `.p-lg` - spacing utilities
-- `.text-muted`, `.text-emphasized` - text styling
-- `.visually-hidden` - accessibility helper
-
-*No specificity issues:*
-- All utilities use single class selector (specificity: 0,1,0)
-- No `!important` declarations needed
-- No compound selectors that increase specificity
-- Easily overridden when needed due to low specificity
-
-*Effective usage:*
-- Applied throughout HTML for consistent spacing
-- Reusable across components
-- Maintainable and scalable
-
-#pagebreak()
-
-== B3: Images and Graphics Quality [10/10 marks]
-
-=== Format Choices with Rationale (4 marks) ✓
-
-*1. SVG Logo (assets/logo.svg) - 758 bytes*
-
-*Format:* Scalable Vector Graphics
-*Rationale:*
-- Vector format ensures crisp rendering at any size (retina displays, zooming)
-- Small file size (<1KB) for fast loading
-- Scalable without quality loss
-- Perfect for logos and icons
-- Accessible with `<title>` and `<desc>` elements
-
-*2. JPEG for Event Photos*
-
-*tech-summit.jpg (31 KB) - Tech Innovation Summit*
-*cultural-fest.jpg (22 KB) - Cultural Festival*
-
-*Format:* JPEG (Joint Photographic Experts Group)
-*Rationale:*
-- Optimal compression for photographic images
-- Smaller file size than PNG (50-70% reduction)
-- Good quality/size balance for web delivery
-- Lossy compression acceptable for photos
-- Standard format with universal browser support
-
-*3. JPEG for Decorative Background*
-
-*career-fair-bg.jpg (18 KB) - Career Fair decorative*
-
-*Format:* JPEG
-*Rationale:*
-- Decorative element where slight quality loss is acceptable
-- Smaller file size prioritized over perfect quality
-- Faster page load for below-fold content
-
-*Format Decision Matrix:*
-
-#table(
-  columns: (auto, auto, auto),
-  [*Image Type*], [*Format*], [*Reason*],
-  [Logo/Icons], [SVG], [Scalable, crisp, small],
-  [Photographs], [JPEG], [Best compression for photos],
-  [Decorative], [JPEG], [Acceptable quality loss],
-)
-
-#pagebreak()
-
-=== Accurate Alt Text and Decorative Handling (3 marks) ✓
-
-*Content Images with Descriptive Alt Text:*
-
-```html
-<!-- Image 1: Tech Summit -->
-<img src="assets/tech-summit.jpg"
-     alt="Students collaborating around laptops at previous Tech Innovation Summit"
-     ... />
-```
-- Describes *what's in the image*: students, laptops, collaboration
-- Provides *context*: Tech Innovation Summit event
-- Helps screen reader users understand the visual content
-
-```html
-<!-- Image 2: Cultural Festival -->
-<img src="assets/cultural-fest.jpg"
-     alt="Colorful traditional dancers performing at Cultural Festival"
-     ... />
-```
-- Describes visual elements: colorful, traditional dancers, performing
-- Provides context: Cultural Festival event
-- Conveys the essence of the image
-
-*Decorative Image with Empty Alt:*
-
-```html
-<!-- Image 3: Career Fair Background (decorative) -->
-<img src="assets/career-fair-bg.jpg"
-     alt=""
-     ... />
-```
-- Empty `alt=""` attribute (not missing)
-- Correctly identifies image as decorative/non-essential
-- Screen readers skip this image (reduces noise)
-- Background pattern adds visual interest but no meaningful content
-
-*SVG Logo Accessibility:*
-
-```html
-<img src="assets/logo.svg"
-     alt="USIU Campus Events Logo"
-     ... />
-```
-- Descriptive alt text for logo image
-- SVG file itself contains `<title>` and `<desc>` elements
-- Dual accessibility approach (alt text + SVG internals)
-
-#pagebreak()
-
-=== Intrinsic Sizing + Lazy Loading (3 marks) ✓
-
-*All Images Have Explicit Dimensions:*
-
-```html
-<img src="assets/tech-summit.jpg"
-     alt="..."
-     width="800"
-     height="500"
-     loading="lazy" />
-```
-
-*Benefits of width/height attributes:*
-- Browser calculates aspect ratio before image loads: 800:500 = 1.6:1
-- Reserves space in layout (prevents content jumping)
-- Cumulative Layout Shift (CLS) score: 0.00 (perfect)
-- Better Core Web Vitals performance
-- Improved user experience (stable layout during load)
-
-*Lazy Loading Implementation:*
-
-All event images use `loading="lazy"` attribute:
-- Images load only when approaching viewport
-- Initial page load faster (doesn't wait for all images)
-- Bandwidth saved for users who don't scroll
-- Native browser feature (no JavaScript needed)
-- Improves Largest Contentful Paint (LCP) metric
-
-*Testing Evidence:*
-- DevTools Network tab with "Slow 3G" throttling
-- Images load progressively as user scrolls
-- Initial load: HTML + CSS + logo only
-- Below-fold images: Load on scroll approach
-
-*Performance Impact:*
-- Initial page load: <1s on good connection
-- Total page size: ~210 KB (including all images)
-- No layout shift during image loading
-- Smooth, professional loading experience
-
-#pagebreak()
-
-== B4: Links and Navigation Basics [2/2 marks]
-
-=== Navigation Links (1 mark) ✓
-
-*Location:* `index.html` lines 35-45
-
-```html
-<nav aria-label="Main navigation">
-    <ul class="nav-list">
-        <li><a href="#events">Events</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://www.usiu.ac.ke" target="_self">USIU Website</a></li>
-    </ul>
-</nav>
-```
-
-*Three navigation links (meets minimum):*
-1. "Events" - Internal anchor link
-2. "About" - Internal anchor link
-3. "USIU Website" - External link
-
-*External Link Handling:*
-- Opens in same tab (`target="_self"`)
-- As required by specification
-- No `_blank` which would open new tab
-
-*Descriptive Link Text:*
-- "Events" (not "click here")
-- "About" (clear purpose)
-- "USIU Website" (describes destination)
-
-=== Internal Anchor Links (1 mark) ✓
-
-*Anchor Link #1: Events*
-- Link: `<a href="#events">` (line 36)
-- Target: `<section id="events">` (line 56)
-- Function: Jumps to events section when clicked
-- Verified: Target exists and ID matches
-
-*Anchor Link #2: About*
-- Link: `<a href="#about">` (line 37)
-- Target: `<aside id="about">` (line 200)
-- Function: Jumps to about section when clicked
-- Verified: Target exists and ID matches
-
-*Both Links Functional:*
-- Tested by clicking in browser
-- Smooth scroll to target section
-- No broken anchors or 404 errors
-- Proper semantic HTML structure
-
-#pagebreak()
-
-== B5: Design Note and Test Plan [2/2 marks]
-
-=== Design Justification (1 mark) ✓
-
-*Location:* README.md, Section "Design Note"
-*Word Count:* 150 words (within 150-180 range)
-
-*Content Coverage:*
-
-1. *Semantic Structure Justification:*
-   - Explains use of header, nav, main, article, aside, footer
-   - Justifies figure/figcaption for image context
-   - Describes dl/dt/dd for event metadata
-
-2. *Color Decisions Rationale:*
-   - Primary blue (#2E5CB8): Professionalism and trust
-   - Accent gold (#FFB81C): Attention to CTAs
-   - Muted text (#666666): Reduces visual noise
-   - Design token approach for consistency
-
-3. *Image Format Choices:*
-   - SVG for logo: Scalability
-   - JPEG for photos: Optimal compression
-   - Empty alt for decorative: Proper handling
-
-4. *Typography Line-Height Strategy:*
-   - 1.6 for body: Comfortable long-form reading
-   - 1.2 for headings: Prevents excessive spacing
-   - Evidence-based decisions with rationale
-
-*Quality:* Coherent, well-structured, demonstrates understanding of design principles.
-
-=== DevTools Test Plan (1 mark) ✓
-
-*Location:* README.md, Section "Test Plan"
-
-*Concrete Browser DevTools Tests Documented:*
-
-1. *Missing File Handling Test:*
-   - Tool: Network tab
-   - Procedure: Reload page, check status codes
-   - Expected: All 200 OK, no 404 errors
-
-2. *Broken Link Detection Test:*
-   - Tool: Elements panel
-   - Procedure: Inspect anchor elements, verify hrefs
-   - Expected: All targets exist, links functional
-
-3. *Image Alt Text Test:*
-   - Tool: Accessibility tab (Chrome) or Accessibility inspector (Firefox)
-   - Procedure: Expand image nodes in accessibility tree
-   - Expected: Alt text visible for content images, empty for decorative
-
-4. *Layout Stability Test:*
-   - Tool: Performance tab
-   - Procedure: Record page load, check Layout Shift metrics
-   - Expected: CLS = 0.00 (no layout shift)
-
-5. *Lazy Loading Test:*
-   - Tool: Network tab with throttling
-   - Procedure: Set "Slow 3G", scroll and observe
-   - Expected: Images load only when approaching viewport
-
-*Quality:* Specific, actionable, uses DevTools features, verifiable results.
-
-#pagebreak()
-
-// Validation Results
 = Validation Results
 
 == HTML5 Validation
@@ -836,11 +355,11 @@ All event images use `loading="lazy"` attribute:
 #table(
   columns: (auto, auto, auto, auto),
   [*Link*], [*Type*], [*Target*], [*Status*],
-  [Skip to main], [Internal], [#main-content], [✓ Works],
-  [Events], [Internal], [#events], [✓ Works],
-  [About], [Internal], [#about], [✓ Works],
+  [Skip to main], [Internal], [\#main-content], [✓ Works],
+  [Events], [Internal], [\#events], [✓ Works],
+  [About], [Internal], [\#about], [✓ Works],
   [USIU Website], [External], [usiu.ac.ke], [✓ Valid],
-  [Learn more (×3)], [Internal], [#event-details], [✓ Works],
+  [Learn more (×3)], [Internal], [\#event-details], [✓ Works],
 )
 
 *Conclusion:* ✓ All links functional, no broken links
@@ -907,7 +426,7 @@ All event images use `loading="lazy"` attribute:
 - Tab key focuses skip link ✓
 - Skip link visible on focus (large yellow button) ✓
 - Enter key triggers navigation ✓
-- Focus moves to #main-content ✓
+- Focus moves to \#main-content ✓
 
 *Conclusion:* ✓ Skip link fully functional
 
@@ -1074,336 +593,3 @@ prac/
 *Buttons:* 48px tall minimum ✓
 
 *All interactive elements meet WCAG AAA target size.*
-
-#pagebreak()
-
-// Technical Excellence
-= Technical Excellence
-
-== Performance Metrics
-
-*Page Load Speed:*
-- First Contentful Paint (FCP): <1.5s
-- Largest Contentful Paint (LCP): <2.5s
-- Time to Interactive (TTI): <3.0s
-- Total Page Size: ~210 KB
-
-*Optimization Techniques:*
-- Lazy loading for images
-- Efficient CSS (no unused rules)
-- Minimal HTTP requests (6 total)
-- Compressed JPEG images
-- SVG for scalable graphics
-
-*Core Web Vitals:*
-- Cumulative Layout Shift (CLS): 0.00 ✓
-- First Input Delay (FID): <100ms ✓
-- Largest Contentful Paint (LCP): <2.5s ✓
-
-== Browser Compatibility
-
-*Tested Browsers:*
-- Chrome 90+ ✓
-- Firefox 88+ ✓
-- Safari 14+ ✓
-- Edge 90+ ✓
-
-*Features Used:*
-- CSS Custom Properties (all modern browsers)
-- CSS Grid (all modern browsers)
-- Flexbox (all browsers)
-- HTML5 Semantic Elements (all browsers)
-- loading="lazy" attribute (all modern browsers)
-
-== Code Quality
-
-*HTML:*
-- Valid HTML5 (W3C/HTML Tidy)
-- Semantic markup throughout
-- Proper attribute usage
-- Consistent indentation
-- Clear comments
-
-*CSS:*
-- Valid CSS3
-- Design token system
-- Low specificity selectors
-- Mobile-first responsive design
-- Well-organized with comments
-
-*Maintainability:*
-- CSS variables make updates easy
-- Utility classes for consistency
-- Clear file structure
-- Comprehensive documentation
-
-#pagebreak()
-
-// Responsive Design
-= Responsive Design
-
-== Breakpoints
-
-*Mobile First Approach:*
-- Base styles for mobile (320px+)
-- Tablet adjustments at 768px
-- Desktop enhancements at 1024px
-
-*Media Query Example:*
-
-```css
-@media (max-width: 768px) {
-    :root {
-        --font-size-h1: 2rem;
-        --font-size-h2: 1.5rem;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-    }
-}
-```
-
-== Device Testing
-
-*Mobile Devices:*
-- iPhone 12 Pro (390×844) ✓
-- Samsung Galaxy S21 (360×800) ✓
-- iPad Mini (768×1024) ✓
-
-*Features:*
-- Touch-friendly buttons (44×44px minimum)
-- Readable text without zooming
-- Horizontal scrolling prevented
-- Skip link large enough for tap (66px)
-
-#pagebreak()
-
-// Learning Outcomes
-= Learning Outcomes Demonstrated
-
-== Technical Skills
-
-*HTML5:*
-- Semantic element usage (header, nav, main, article, aside, footer)
-- Proper heading hierarchy
-- Accessible forms and navigation
-- Metadata elements (time, dl, dt, dd)
-
-*CSS3:*
-- Custom properties (design tokens)
-- Flexbox and Grid layouts
-- Responsive design principles
-- Typography best practices
-- Low-specificity utility classes
-
-*Accessibility:*
-- WCAG 2.1 Level AA compliance
-- Skip navigation links
-- Alt text implementation
-- Keyboard navigation
-- Screen reader compatibility
-- Color contrast standards
-
-*Performance:*
-- Image optimization
-- Lazy loading
-- Layout stability (CLS prevention)
-- Core Web Vitals optimization
-
-== Professional Practices
-
-*Code Standards:*
-- Valid HTML5 and CSS3
-- Consistent code formatting
-- Comprehensive comments
-- Version control ready
-
-*Documentation:*
-- Design rationale explained
-- Testing procedures documented
-- Technical decisions justified
-- Clear file structure
-
-*Testing:*
-- Browser DevTools usage
-- Accessibility auditing
-- Cross-browser testing
-- Validation procedures
-
-#pagebreak()
-
-// Conclusion
-= Conclusion
-
-== Project Summary
-
-This Campus Events Micro-Site successfully demonstrates comprehensive web development skills:
-
-*Semantic HTML5:* ✓
-- Proper document structure using appropriate semantic elements
-- Enhances accessibility and SEO
-- Clear content hierarchy
-
-*CSS Design Systems:* ✓
-- Maintainable, scalable styling through CSS custom properties
-- Utility classes for consistency
-- Responsive design for all devices
-
-*Accessibility:* ✓
-- WCAG 2.1 Level AA compliance
-- AAA level for target size (skip link)
-- Inclusive design for all users
-
-*Performance:* ✓
-- Optimized images with lazy loading
-- Proper sizing prevents layout shift
-- Fast loading and Core Web Vitals
-
-*Code Quality:* ✓
-- Valid, standards-compliant code
-- Professional practices throughout
-- Ready for production deployment
-
-== Marks Achieved
-
-#table(
-  columns: (auto, auto, auto),
-  [*Criteria*], [*Max Marks*], [*Achieved*],
-  [B1: Semantic Structure], [8], [8 ✓],
-  [B2: Typography & Color], [8], [8 ✓],
-  [B3: Images & Graphics], [10], [10 ✓],
-  [B4: Links & Navigation], [2], [2 ✓],
-  [B5: Design Note & Tests], [2], [2 ✓],
-  [*TOTAL*], [*30*], [*30 ✓*],
-)
-
-== Final Statement
-
-All assignment requirements have been met and exceeded. The project demonstrates:
-- Professional web development practices
-- Accessibility best practices (WCAG AA/AAA)
-- Semantic HTML5 structure
-- CSS design system implementation
-- Optimized performance
-- Comprehensive testing and validation
-
-The micro-site is production-ready and suitable for real-world deployment.
-
-#pagebreak()
-
-// Appendices
-= Appendices
-
-== Appendix A: Complete HTML Structure
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>Campus Events - USIU</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <header>...</header>
-    <nav>...</nav>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <main id="main-content">
-        <section id="events">
-            <article>Event 1</article>
-            <article>Event 2</article>
-            <article>Event 3</article>
-        </section>
-        <aside id="about">...</aside>
-    </main>
-    <footer>...</footer>
-</body>
-</html>
-```
-
-== Appendix B: CSS Variables Reference
-
-```css
-:root {
-    /* Colors */
-    --color-primary: #2E5CB8;
-    --color-accent: #FFB81C;
-    --color-text-base: #1a1a1a;
-    --color-text-muted: #666666;
-    --color-background: #FFFFFF;
-
-    /* Typography */
-    --font-size-base: 1rem;
-    --font-size-h1: 2.5rem;
-    --line-height-base: 1.6;
-    --line-height-heading: 1.2;
-
-    /* Spacing */
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-}
-```
-
-== Appendix C: Validation Commands
-
-*HTML Validation:*
-```bash
-tidy -q index.html
-```
-
-*CSS Validation:*
-- Use W3C CSS Validator online
-- Or CSS linting tools
-
-*Accessibility Testing:*
-- Chrome DevTools Lighthouse
-- WAVE browser extension
-- Screen reader testing (NVDA, JAWS, VoiceOver)
-
-== Appendix D: File Sizes
-
-#table(
-  columns: (auto, auto),
-  [*File*], [*Size*],
-  [index.html], [~12 KB],
-  [styles.css], [~13 KB],
-  [logo.svg], [758 bytes],
-  [tech-summit.jpg], [31 KB],
-  [cultural-fest.jpg], [22 KB],
-  [career-fair-bg.jpg], [18 KB],
-  [*Total*], [*~97 KB*],
-)
-
-#pagebreak()
-
-// Declaration
-#v(2cm)
-#align(center)[
-  = Declaration of Authenticity
-
-  #v(1cm)
-
-  I declare that this submission is my own work and that all sources have been properly acknowledged. The code, documentation, and analysis presented represent my understanding and implementation of the assignment requirements.
-
-  #v(2cm)
-
-  *Student Name:* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-  *Student ID:* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-  *Signature:* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-  *Date:* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-  #v(2cm)
-
-  #text(size: 10pt, style: "italic")[
-    This document was generated using Typst.\
-    Project files available at: [path/to/project]
-  ]
-]
-
-// End of document
