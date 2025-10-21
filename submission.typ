@@ -70,7 +70,7 @@ Image format choices balance quality and performance: JPEG for photographs (tech
 == Screenshot 1: Full Page View
 
 #figure(
-  image("Full Page View.png",width: 100%),
+  image("Full Page View.png", height: 75%, fit: "contain"),
   caption: "Complete page view showing semantic HTML structure and responsive layout"
 )
 
