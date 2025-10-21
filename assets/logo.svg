@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="USIU Campus Events Logo">
+    <title>USIU Campus Events Logo</title>
+    <desc>Logo featuring a building icon in gold and blue colors representing campus events</desc>
+
+    <!-- Outer circle - primary blue with gold border -->
+    <circle cx="30" cy="30" r="28" fill="#2E5CB8" stroke="#FFB81C" stroke-width="2"/>
+
+    <!-- Building shape - gold/yellow -->
+    <path d="M20 25 L30 15 L40 25 L40 40 L20 40 Z" fill="#FFB81C"/>
+
+    <!-- Door - blue -->
+    <rect x="27" y="30" width="6" height="10" fill="#2E5CB8"/>
+
+    <!-- Window/circle detail - blue -->
+    <circle cx="30" cy="22" r="3" fill="#2E5CB8"/>
+</svg>
